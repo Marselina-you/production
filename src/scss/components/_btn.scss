@@ -1,0 +1,55 @@
+.btn-nav {
+  text-transform: capitalize;
+    color: var(--light-color);
+    transition: color 0.3s ease-in-out;
+
+    @include for-hover {
+      &:hover {
+       color: var(--text-light-color);
+     }
+     }
+     &:active {
+      color: var(--primary-color-hover);
+    }
+    &:focus-visible {
+      outline: none;
+      color: var(--primary-color-hover);
+    }
+
+
+
+
+
+}
+.btn {
+  border: 1px solid transparent;
+  font: var(--regular-lato);
+  color: var(--light-color);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+
+
+  &--action {
+    border-radius: 4px;
+    padding: 4px 27px;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: var(--order-color);
+    transition: background-color 0.3s ease-in-out;
+
+    @include for-hover {
+      &:hover {
+        background-color: var(--order-color-hover);
+      }
+    }
+    &:active {
+      border-color: var(--primary-color-hover);
+      background-color: var(--order-color-hover);
+    }
+    &:focus {
+      background-color: var(--order-color-hover);
+    }
+  }
+
+}
