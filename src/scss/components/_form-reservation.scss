@@ -1,0 +1,152 @@
+.reservation {
+  padding-top: 100px;
+  background-color: var(--light-color);
+
+  @include tablet {
+    padding-top: 60px;
+  }
+  @include small-tablet {
+    padding-top: 30px;
+  }
+
+
+
+  &__container {
+@include flex-column-center;
+}
+  &__content {
+    padding-bottom: 60px;
+    width: 70%;
+
+    @include big-desktop {
+      padding-bottom: 40px;
+      width: 80%;
+    }
+
+    @include small-tablet {
+      padding-bottom: 10px;
+      width: 100%;
+    }
+  }
+}
+.reservation-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 60px;
+
+  @include small-tablet {
+    border-style: none;
+    padding-bottom: 30px;
+  }
+
+&__btn {
+    grid-column: 4 / 1 span; //начинается с 4 колонки / занимает 1 колонки
+    border-radius: 0 5px 5px 0 ;
+    padding: 0 100px;
+    font: var(--regular-lato-md);
+
+    @include old-desktop {
+      border-radius: 5px;
+      padding: 10px 100px;
+    }
+    @include small-tablet {
+      grid-column: 4 span;
+    }
+  }
+}
+.reservation-form-field {
+  margin: 0;
+  padding: 0;
+  grid-column: 1 span;
+
+  &__select {
+    min-height: 36px;
+    margin-right: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--gray-light-color);
+    padding: 25px 45px;
+    width: 100%;
+    font: var(--regular-lato-md);
+    text-align: start;
+    color: var(--gray-light-color);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+
+    @include small-tablet {
+      padding: 15px 35px;
+      font-size: 1.125rem;
+    }
+}
+
+    &--people {
+      background-image: url("../img/people.png");
+      border-right: 0;
+      //padding: 25px 45px;
+
+      @include old-desktop {
+        border-radius: 5px;
+        border-right: 1px solid var(--gray-light-color);
+      }
+}
+
+    &--hour {
+      border-right: 0;
+      background-image: url("../img/hour.png");
+      //padding: 25px 45px;
+
+      @include old-desktop {
+        border-radius: 5px;
+        border-right: 1px solid var(--gray-light-color);
+      }
+    }
+    &--data {
+      border-radius: 5px 0 0 5px;
+      border-right: 0;
+      background-image: url("../img/data.png");
+
+
+      @include old-desktop {
+        border-radius: 5px;
+        border-right: 1px solid var(--gray-light-color);
+      }
+
+
+}
+
+
+
+    @include old-desktop {
+      grid-column: 12 span;
+      border: none;
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
+
+    }
+
+    }
+
+
+
+.reservation-explain {
+  padding-top: 60px;
+  border-top: 1px solid var(--gray-light-color);
+  font: var(--regular-lato-md);
+
+  text-align: center;
+  color: var(--text-light-color);
+
+  @include tablet {
+    margin-top: 10px;
+    font-size: 1.25rem;
+  }
+  @include small-tablet {
+    font-size: 1.125rem;
+    padding-top: 20px;
+  }
+}
+.reservation-flower {
+  @include flex-column-center;
+}
+

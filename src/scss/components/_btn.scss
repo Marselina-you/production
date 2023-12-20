@@ -23,10 +23,28 @@
 }
 .btn {
   border: 1px solid transparent;
-  font: var(--regular-lato);
+  font: var(--regular-lato-md);
   color: var(--light-color);
   cursor: pointer;
   transition: color 0.3s ease-in-out;
+
+  &--primary {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    @include for-hover {
+      &:hover {
+        border-color: var(--primary-color-hover);
+        background-color: var(--primary-color-hover);
+      }
+    }
+    &:active {
+      background-color: var(--primary-color-hover);
+    }
+    &:focus {
+      background-color: var(--primary-color-hover);
+    }
+  }
 
 
   &--action {
@@ -50,6 +68,9 @@
     &:focus {
       background-color: var(--order-color-hover);
     }
+  }
+  @include small-tablet {
+    font-size: 1.125rem;
   }
 
 }
