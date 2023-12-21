@@ -1,0 +1,78 @@
+.quote {
+  width: 100%;
+  min-height: 400px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+  &__container {
+    @include flex-column-start;
+    position: relative;
+    height: 100%;
+
+    @include tablet {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+  &--first {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  &--second {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    margin: 20% 0;
+    padding: 25px 25px;
+    width: 70%;
+    background-color:  var(--gray-light-color);
+
+    @include tablet {
+      margin-top: 8% auto;
+      padding: 5px 5px;
+      width: 95%;
+    }
+
+    &--second {
+      background-color: var(--blue-light-color);
+    }
+
+  }
+
+  &__text {
+    font-family: var(--font-family-gabriola);
+    font-size: 2.8125rem;
+    line-height: 150%;
+    color: var(--light-color);
+
+    @include tablet {
+      font-size: 1.875rem;
+    }
+
+  }
+  &__autor {
+    font: var(--regular-lato);
+    font-size: 1.875rem;
+    text-align: end;
+    text-transform: uppercase;
+    color: var(--primary-color);
+
+    @include tablet {
+      font-size: 1.25rem;
+    }
+    @include small-tablet {
+      font-size: 1.125rem;
+    }
+  }
+}
+

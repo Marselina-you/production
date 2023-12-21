@@ -1,0 +1,68 @@
+.address-block {
+background-color: var(--light-color);
+  &__content {
+    @include flex-column-center;
+    padding: 100px 0;
+    padding-bottom: 50px;
+
+    @include tablet {
+      padding: 40px 0;
+    }
+    @include small-tablet {
+      padding: 25px 0;
+    }
+  }
+
+
+  &__title {
+    margin: 0;
+    font: var(--regular-lato);
+    font-size: 28px;
+    line-height: 70px;
+    color: var( --text-light-color);
+
+    @include small-tablet {
+      font-size: 24px;
+      line-height: 40px;
+    }
+  }
+  &__address {
+    font: var(--regular-lato);
+    font-size: 20px;
+    color: var(--text-light-color);
+
+    @include small-tablet {
+      font-size: 18px;
+
+    }
+
+  }
+  &__phone {
+    font: var(--regular-lato);
+    font-size: 20px;
+    line-height: 70px;
+    color: var( --text-light-color);
+
+    @include small-tablet {
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+  &__mail {
+    font: var(--regular-lato);
+    font-size: 20px;
+    line-height: 70px;
+    color: var( --text-light-color);
+
+    @include small-tablet {
+      font-size: 18px;
+      line-height: 15px;
+    }
+  }
+  &__btn {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font: var(--regular-lato);
+  }
+}

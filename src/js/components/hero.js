@@ -3,6 +3,7 @@ Swiper.use([Navigation, Pagination]);
 import SwiperCore, { Autoplay, EffectFade  } from 'swiper';
 SwiperCore.use([Autoplay, EffectFade ]);
 
+
 const mainSlider = document.querySelector(".mainSlider");
 console.log(mainSlider)
 

@@ -3,7 +3,7 @@
   background-color: var(--light-color);
 
   @include tablet {
-    padding-top: 60px;
+    padding-top: 40px;
   }
   @include small-tablet {
     padding-top: 30px;
@@ -19,7 +19,7 @@
     width: 70%;
 
     @include big-desktop {
-      padding-bottom: 40px;
+      padding-bottom: 20px;
       width: 80%;
     }
 
@@ -34,9 +34,9 @@
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 60px;
 
-  @include small-tablet {
+  @include tablet {
     border-style: none;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
 &__btn {
@@ -50,7 +50,7 @@
       padding: 10px 100px;
     }
     @include small-tablet {
-      grid-column: 4 span;
+      grid-column: 2 / 2 span;
     }
   }
 }
@@ -139,6 +139,7 @@
 
   @include tablet {
     margin-top: 10px;
+    padding-top: 20px;
     font-size: 1.25rem;
   }
   @include small-tablet {

@@ -1,134 +1,139 @@
 <header class="header container">
-
-    <div class="header-logo wow animate__fadeInLeft">
-      <img class="header-logo__decor" src="img/logo-txt.svg" alt="burrito">
+  <div class="header-logo wow animate__fadeInLeft">
+    <img class="header-logo__decor" src="img/logo-txt.svg" alt="burrito">
   </div>
   <div class="nav-wrap">
-<nav class="nav header__nav">
-  <ul class="nav__list list-reset">
-    <li class="nav__item"><a href="#">main</a></li>
-    <li class="nav__item"><a href="#">about us</a></li>
-    <li class="nav__item"><a href="#">menu</a></li>
-    <li class="nav__item"><a href="#">reservation</a></li>
-    <li class="nav__item"><button class="btn-reset btn-nav btn-cart btn-cart" data-path="cart-popup">cart</button></li>
-    <li class="nav__item"> <button class="btn-reset btn-nav btn-login" data-path="form-popup">logIn</button></li>
-  </ul>
-  <div class="modal-container">
-		<div class="modal-cart-overlay">
-			<div class="modal-cart" data-target="cart-popup">
-				<div class="modal-content">
-          <div class="modal-body">
-            <div class="mini-cart-content">
-              <div class="widget widget_shopping_cart"><div class="widget_shopping_cart_content">
-                <ul class="mini-cart cart_list product_list_widget list-reset">
-              <li class="mini-cart-item mini_cart_item">
-              <a href="#" class="remove remove_from_cart_button" aria-label="Удалить товар &quot;Belt&quot; из корзины" data-product_id="31" data-cart_item_key="5" data-product_sku="woo-belt">×</a>
-              <img width="300" height="300" src="img/seviche.png" alt="seviche" loading="lazy">
-              <a href="#" class="mini-cart-content__title">
-                Tacos</a>
-                <span class="quantity">2 × <span class="price-amount amount"><bdi><span class="price-currencySymbol">€</span>55.00</bdi></span></span></li>
-                  <li class="mini-cart-item mini_cart_item">
-              <a href="" class="remove remove_from_cart_button" aria-label="Удалить товар &quot;Beanie&quot; из корзины" data-product_id="18" data-cart_item_key="3" data-product_sku="woo-beanie">×</a>
-              <img width="300" height="300" src="img/tapas.png" alt="tapas" loading="lazy">
-              <a href="#" class="mini-cart-content__title">
-                Seviche</a>
-                <span class="quantity">3 × <span class="price-amount amount"><bdi><span class="price-currencySymbol">€</span>18.00</bdi></span></span></li>
-              </ul>
-            <p class="mini-cart__total total">
-              <strong>Summary:</strong> <span class="price-amount amount"><bdi><span class="price-currencySymbol">€</span>164.00</bdi></span>	</p>
-            <p class="mini-cart__buttons buttons"><a href="#" class="button wc-forward">Viewing the cart</a><a href="#" class="button checkout wc-forward">Making an order</a></p>
-            </div>
-            </div>
+    <nav class="nav header__nav" title="navigation" aria-label="main">
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="#" rel="tag">main</a></li>
+        <li class="nav__item"><a href="#" rel="tag">about us</a></li>
+        <li class="nav__item"><a href="#" rel="tag">menu</a></li>
+        <li class="nav__item"><a href="#" rel="tag">reservation</a></li>
+        <li class="nav__item"><button class="btn-reset btn-nav btn-cart btn-cart" data-path="cart-popup"
+            aria-label="cart">cart</button>
+        </li>
+        <li class="nav__item"><button class="btn-reset btn-nav btn-login" data-path="form-popup"
+            aria-label="logIn">logIn</button></li>
+      </ul>
+      <div class="modal-container">
+        <div class="modal-cart-overlay">
+          <div class="modal-cart" data-target="cart-popup">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="mini-cart-content">
+                  <ul class="mini-cart cart_list list-reset">
+                    <li>
+                      <a href="#" class="remove_from_cart_button" aria-label="delete the product"
+                        data-product_id="31">×</a>
+                      <img width="300" height="300" src="img/seviche.png" alt="seviche" loading="lazy">
+                      <a href="#" class="mini-cart-content__title" aria-label="go to the product page">Tacos</a>
+                      <span class="quantity">2 × <span
+                          class="price-amount amount"><bdi><span>€</span>55.00</bdi></span></span></li>
+                    <li>
+                      <a href="" class="remove_from_cart_button" aria-label="delete the product"
+                        data-product_id="18">×</a>
+                      <img width="300" height="300" src="img/tapas.png" alt="tapas" loading="lazy">
+                      <a href="#" class="mini-cart-content__title" aria-label="go to the product page">Seviche</a>
+                      <span class="quantity">3 × <span class="price-amount amount"><bdi>
+                            <span>€</span>18.00</bdi></span></span></li>
+                  </ul>
+                  <p class="mini-cart__total total">
+                    <strong>Summary:</strong> <span class="price-amount amount"><bdi>
+                        <span>€</span>164.00</bdi></span> </p>
+                  <p class="mini-cart__buttons"><a href="#" rel="tag" aria-label="go to viewing the cart">Viewing the
+                      cart</a>
+                    <a href="#" rel="tag" aria-label="go to making an order">Making an order</a></p>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-			</div>
-			</div>
-	</div>
-  <div class="modal-container">
-    <div class="modal-login-overlay">
-      <div class="modal-login" data-target="form-popup">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="tabs">
-              <ul class="tabs__list">
-                <li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-tabs-path="auto">Авторизация</button>
-                </li>
-                <li class="tabs__item"><button class="tabs__btn  btn-reset" data-tabs-path="register">Регистрация</button>
-                </li>
-              </ul>
-              <div class="tabs__content tabs__content--active" data-tabs-target="auto">
-                <div class="content">
-                  <h2 class="content__title">Авторизация</h2>
-                  <div class="register">
-                    <form method="post" class="register">
-                      <p class="form-block">
-                        <label for="username">Имя пользователя или Email <span class="required">*</span></label>
-                        <input type="text" class="form-block-text" name="username" id="username" value="" autocomplete="username"> </p>
-                      <p class="form-block">
-                        <label for="current-password">Пароль<span class="required">*</span></label>
-                        <input type="password" class="form-block-text" name="current-password" id="current-password" autocomplete="current-password"/>
-                      </p>
-                      <p class="form-block-submit">
-                        <input type="hidden" id="login-nonce" name="login-nonce"
-                          value="a816d2aebf"><input type="hidden" name="_wp_http_referer" value="/">
-                        <button type="submit" class="btn btn-reset btn--action" name="login" value="Вход">вход</button>
-                        <label class="form-block-remember">
-                          <input class="form-block__input-checkbox" name="rememberme" type="checkbox" id="rememberme"
-                            value="forever">
-                          <span>Запомнить меня</span>
-                        </label>
-                      </p>
-                    </form>
-                    <!--форма авторизации-->
+      </div>
+      <div class="modal-container">
+        <div class="modal-login-overlay">
+          <div class="modal-login" data-target="form-popup">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="tabs">
+                  <ul class="tabs__list">
+                    <li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-tabs-path="auto" role="tab"
+                        aria-label="authorization">Authorization</button>
+                    </li>
+                    <li class="tabs__item"><button class="tabs__btn  btn-reset" data-tabs-path="register" role="tab"
+                        aria-label="registration">Registration</button>
+                    </li>
+                  </ul>
+                  <div class="tabs__content tabs__content--active" data-tabs-target="auto" role="tabpanel">
+                    <div class="content">
+                      <h2 class="content__title">Авторизация</h2>
+                      <div class="register">
+                        <form method="post" class="register">
+                          <p class="form-block">
+                            <label for="username">Имя пользователя или Email <span class="required">*</span></label>
+                            <input type="text" class="form-block-text" name="username" id="username"
+                              autocomplete="username"></p>
+                          <p class="form-block">
+                            <label for="current-password">Пароль<span class="required">*</span></label>
+                            <input type="password" class="form-block-text" name="current-password" id="current-password"
+                              autocomplete="current-password">
+                          </p>
+                          <p class="form-block-submit">
+                            <input type="hidden" id="login-nonce" name="login-nonce" value="a816d2aebf"><input
+                              type="hidden" name="_wp_http_referer">
+                            <button type="submit" class="btn btn-reset btn--action" name="login"
+                              aria-label="entry">entry</button>
+                            <label for="rememberme" class="form-block-remember">
+                              <input class="form-block__input-checkbox" name="rememberme" type="checkbox"
+                                id="rememberme">
+                              <span>rememberme</span>
+                            </label>
+                          </p>
+                        </form>
+                        <!--форма авторизации-->
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="tabs__content" data-tabs-target="register">
-                <div class="content">
-                  <h2 class="content__title">Регистрация</h2>
-                  <div class="register">
-                    <form method="post" class="register">
-                      <p class="form-block">
-                        <label for="reg_email">Email <span class="required">*</span></label>
-                        <input type="email" class="Input Input--text input-text" name="email"
-                          id="reg_email" value="" autocomplete="off">
-                        </p>
-                        <p class="form-block">
-                          <label for="new_password">Пароль<span class="required">*</span></label>
-                          <input type="password" class="form-block-text" name="new_password" id="new_password" autocomplete="off"/>
-                        </p>
-                        <p class="form-block">
-                          <label for="second_password">Повторите пароль<span class="required">*</span></label>
-                          <input type="password" class="form-block-text" name="second_password" id="second_password" autocomplete="off"/>
-                        </p>
-                      <p class="form-block-submit">
-                        <input type="hidden" id="register-nonce" name="register-nonce"
-                          value="ece5871410"><input type="hidden" name="_wp_http_referer" value="/">
-                        <button type="submit" class="btn btn-reset btn--action" name="register"
-                          value="Регистрация">сохранить</button>
-                      </p>
-                    </form>
+                  <div class="tabs__content" data-tabs-target="register" role="tabpanel">
+                    <div class="content">
+                      <h2 class="content__title">Registration</h2>
+                      <div class="register">
+                        <form method="post" class="register">
+                          <p class="form-block">
+                            <label for="reg_email">Email <span class="required">*</span></label>
+                            <input type="email" class="input-text" name="reg_email" id="reg_email" autocomplete="off">
+                          </p>
+                          <p class="form-block">
+                            <label for="new_password">Пароль<span class="required">*</span></label>
+                            <input type="password" class="form-block-text" name="new_password" id="new_password"
+                              autocomplete="off">
+                          </p>
+                          <p class="form-block">
+                            <label for="second_password">Повторите пароль<span class="required">*</span></label>
+                            <input type="password" class="form-block-text" name="second_password" id="second_password"
+                              autocomplete="off">
+                          </p>
+                          <p class="form-block-submit">
+                            <input type="hidden" id="register-nonce" name="register-nonce" value="ece5871410"><input
+                              type="hidden" name="_wp_http_referer">
+                            <button type="submit" class="btn btn-reset btn--action" name="registration"
+                              aria-label="save">save</button>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-</div>
+        </div>
       </div>
-      </div>
+    </nav>
   </div>
-</nav>
-</div>
-<div class="burger-wrap">
-  <button class="burger btn-reset">
-    <span class="burger__line"></span>
-  </button>
-
-</div>
-
-</div>
-
+  <div class="burger-wrap">
+    <button class="burger btn-reset">
+      <span class="burger__line"></span>
+    </button>
+  </div>
+  </div>
 </header>
-

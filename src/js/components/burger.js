@@ -1,4 +1,4 @@
-
+import WOW from 'wowjs';
 
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header__nav');
@@ -19,3 +19,8 @@ burger.addEventListener('click', () => {
 
 
 })
+
+new WOW.WOW({
+  live: false//чтобы не было ошибок в консоли
+ //и любые другие параметры - это просто пример
+}).init();

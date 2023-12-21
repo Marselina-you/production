@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="en" class="page">
 
 <head>
   <meta charset="UTF-8">
@@ -14,144 +14,150 @@
   <script defer src="js/main.js"></script>
 </head>
 
-<body>
+<body id="page">
   <div class="site-container">
     <header class="header container">
-
-    <div class="header-logo wow animate__fadeInLeft">
-      <img class="header-logo__decor" src="img/logo-txt.svg" alt="burrito">
+  <div class="header-logo wow animate__fadeInLeft">
+    <img class="header-logo__decor" src="img/logo-txt.svg" alt="burrito">
   </div>
   <div class="nav-wrap">
-<nav class="nav header__nav">
-  <ul class="nav__list list-reset">
-    <li class="nav__item"><a href="#">main</a></li>
-    <li class="nav__item"><a href="#">about us</a></li>
-    <li class="nav__item"><a href="#">menu</a></li>
-    <li class="nav__item"><a href="#">reservation</a></li>
-    <li class="nav__item"><button class="btn-reset btn-nav btn-cart btn-cart" data-path="cart-popup">cart</button></li>
-    <li class="nav__item"> <button class="btn-reset btn-nav btn-login" data-path="form-popup">logIn</button></li>
-  </ul>
-  <div class="modal-container">
+    <nav class="nav header__nav" title="navigation" aria-label="main">
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="#" rel="tag">main</a></li>
+        <li class="nav__item"><a href="#" rel="tag">about us</a></li>
+        <li class="nav__item"><a href="#" rel="tag">menu</a></li>
+        <li class="nav__item"><a href="#" rel="tag">reservation</a></li>
+        <li class="nav__item"><button class="btn-reset btn-nav btn-cart btn-cart" data-path="cart-popup"
+            aria-label="cart">cart</button>
+        </li>
+        <li class="nav__item"><button class="btn-reset btn-nav btn-login" data-path="form-popup"
+            aria-label="logIn">logIn</button></li>
+      </ul>
+      <div class="modal-container">
         <div class="modal-cart-overlay">
-            <div class="modal-cart" data-target="cart-popup">
-                <div class="modal-content">
-          <div class="modal-body">
-            <div class="mini-cart-content">
-              <div class="widget widget_shopping_cart"><div class="widget_shopping_cart_content">
-                <ul class="mini-cart cart_list product_list_widget list-reset">
-              <li class="mini-cart-item mini_cart_item">
-              <a href="#" class="remove remove_from_cart_button" aria-label="Удалить товар &quot;Belt&quot; из корзины" data-product_id="31" data-cart_item_key="5" data-product_sku="woo-belt">×</a>
-              <img width="300" height="300" src="img/seviche.png" alt="seviche" loading="lazy">
-              <a href="#" class="mini-cart-content__title">
-                Tacos</a>
-                <span class="quantity">2 × <span class="price-amount amount"><bdi><span class="price-currencySymbol">€</span>55.00</bdi></span></span></li>
-                  <li class="mini-cart-item mini_cart_item">
-              <a href="" class="remove remove_from_cart_button" aria-label="Удалить товар &quot;Beanie&quot; из корзины" data-product_id="18" data-cart_item_key="3" data-product_sku="woo-beanie">×</a>
-              <img width="300" height="300" src="img/tapas.png" alt="tapas" loading="lazy">
-              <a href="#" class="mini-cart-content__title">
-                Seviche</a>
-                <span class="quantity">3 × <span class="price-amount amount"><bdi><span class="price-currencySymbol">€</span>18.00</bdi></span></span></li>
-              </ul>
-            <p class="mini-cart__total total">
-              <strong>Summary:</strong> <span class="price-amount amount"><bdi><span class="price-currencySymbol">€</span>164.00</bdi></span> </p>
-            <p class="mini-cart__buttons buttons"><a href="#" class="button wc-forward">Viewing the cart</a><a href="#" class="button checkout wc-forward">Making an order</a></p>
-            </div>
-            </div>
+          <div class="modal-cart" data-target="cart-popup">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="mini-cart-content">
+                  <ul class="mini-cart cart_list list-reset">
+                    <li>
+                      <a href="#" class="remove_from_cart_button" aria-label="delete the product"
+                        data-product_id="31">×</a>
+                      <img width="300" height="300" src="img/seviche.png" alt="seviche" loading="lazy">
+                      <a href="#" class="mini-cart-content__title" aria-label="go to the product page">Tacos</a>
+                      <span class="quantity">2 × <span
+                          class="price-amount amount"><bdi><span>€</span>55.00</bdi></span></span></li>
+                    <li>
+                      <a href="" class="remove_from_cart_button" aria-label="delete the product"
+                        data-product_id="18">×</a>
+                      <img width="300" height="300" src="img/tapas.png" alt="tapas" loading="lazy">
+                      <a href="#" class="mini-cart-content__title" aria-label="go to the product page">Seviche</a>
+                      <span class="quantity">3 × <span class="price-amount amount"><bdi>
+                            <span>€</span>18.00</bdi></span></span></li>
+                  </ul>
+                  <p class="mini-cart__total total">
+                    <strong>Summary:</strong> <span class="price-amount amount"><bdi>
+                        <span>€</span>164.00</bdi></span> </p>
+                  <p class="mini-cart__buttons"><a href="#" rel="tag" aria-label="go to viewing the cart">Viewing the
+                      cart</a>
+                    <a href="#" rel="tag" aria-label="go to making an order">Making an order</a></p>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-            </div>
-            </div>
-    </div>
-  <div class="modal-container">
-    <div class="modal-login-overlay">
-      <div class="modal-login" data-target="form-popup">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="tabs">
-              <ul class="tabs__list">
-                <li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-tabs-path="auto">Авторизация</button>
-                </li>
-                <li class="tabs__item"><button class="tabs__btn  btn-reset" data-tabs-path="register">Регистрация</button>
-                </li>
-              </ul>
-              <div class="tabs__content tabs__content--active" data-tabs-target="auto">
-                <div class="content">
-                  <h2 class="content__title">Авторизация</h2>
-                  <div class="register">
-                    <form method="post" class="register">
-                      <p class="form-block">
-                        <label for="username">Имя пользователя или Email <span class="required">*</span></label>
-                        <input type="text" class="form-block-text" name="username" id="username" value="" autocomplete="username"> </p>
-                      <p class="form-block">
-                        <label for="current-password">Пароль<span class="required">*</span></label>
-                        <input type="password" class="form-block-text" name="current-password" id="current-password" autocomplete="current-password"/>
-                      </p>
-                      <p class="form-block-submit">
-                        <input type="hidden" id="login-nonce" name="login-nonce"
-                          value="a816d2aebf"><input type="hidden" name="_wp_http_referer" value="/">
-                        <button type="submit" class="btn btn-reset btn--action" name="login" value="Вход">вход</button>
-                        <label class="form-block-remember">
-                          <input class="form-block__input-checkbox" name="rememberme" type="checkbox" id="rememberme"
-                            value="forever">
-                          <span>Запомнить меня</span>
-                        </label>
-                      </p>
-                    </form>
-                    <!--форма авторизации-->
+      </div>
+      <div class="modal-container">
+        <div class="modal-login-overlay">
+          <div class="modal-login" data-target="form-popup">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="tabs">
+                  <ul class="tabs__list">
+                    <li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-tabs-path="auto" role="tab"
+                        aria-label="authorization">Authorization</button>
+                    </li>
+                    <li class="tabs__item"><button class="tabs__btn  btn-reset" data-tabs-path="register" role="tab"
+                        aria-label="registration">Registration</button>
+                    </li>
+                  </ul>
+                  <div class="tabs__content tabs__content--active" data-tabs-target="auto" role="tabpanel">
+                    <div class="content">
+                      <h2 class="content__title">Авторизация</h2>
+                      <div class="register">
+                        <form method="post" class="register">
+                          <p class="form-block">
+                            <label for="username">Имя пользователя или Email <span class="required">*</span></label>
+                            <input type="text" class="form-block-text" name="username" id="username"
+                              autocomplete="username"></p>
+                          <p class="form-block">
+                            <label for="current-password">Пароль<span class="required">*</span></label>
+                            <input type="password" class="form-block-text" name="current-password" id="current-password"
+                              autocomplete="current-password">
+                          </p>
+                          <p class="form-block-submit">
+                            <input type="hidden" id="login-nonce" name="login-nonce" value="a816d2aebf"><input
+                              type="hidden" name="_wp_http_referer">
+                            <button type="submit" class="btn btn-reset btn--action" name="login"
+                              aria-label="entry">entry</button>
+                            <label for="rememberme" class="form-block-remember">
+                              <input class="form-block__input-checkbox" name="rememberme" type="checkbox"
+                                id="rememberme">
+                              <span>rememberme</span>
+                            </label>
+                          </p>
+                        </form>
+                        <!--форма авторизации-->
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="tabs__content" data-tabs-target="register">
-                <div class="content">
-                  <h2 class="content__title">Регистрация</h2>
-                  <div class="register">
-                    <form method="post" class="register">
-                      <p class="form-block">
-                        <label for="reg_email">Email <span class="required">*</span></label>
-                        <input type="email" class="Input Input--text input-text" name="email"
-                          id="reg_email" value="" autocomplete="off">
-                        </p>
-                        <p class="form-block">
-                          <label for="new_password">Пароль<span class="required">*</span></label>
-                          <input type="password" class="form-block-text" name="new_password" id="new_password" autocomplete="off"/>
-                        </p>
-                        <p class="form-block">
-                          <label for="second_password">Повторите пароль<span class="required">*</span></label>
-                          <input type="password" class="form-block-text" name="second_password" id="second_password" autocomplete="off"/>
-                        </p>
-                      <p class="form-block-submit">
-                        <input type="hidden" id="register-nonce" name="register-nonce"
-                          value="ece5871410"><input type="hidden" name="_wp_http_referer" value="/">
-                        <button type="submit" class="btn btn-reset btn--action" name="register"
-                          value="Регистрация">сохранить</button>
-                      </p>
-                    </form>
+                  <div class="tabs__content" data-tabs-target="register" role="tabpanel">
+                    <div class="content">
+                      <h2 class="content__title">Registration</h2>
+                      <div class="register">
+                        <form method="post" class="register">
+                          <p class="form-block">
+                            <label for="reg_email">Email <span class="required">*</span></label>
+                            <input type="email" class="input-text" name="reg_email" id="reg_email" autocomplete="off">
+                          </p>
+                          <p class="form-block">
+                            <label for="new_password">Пароль<span class="required">*</span></label>
+                            <input type="password" class="form-block-text" name="new_password" id="new_password"
+                              autocomplete="off">
+                          </p>
+                          <p class="form-block">
+                            <label for="second_password">Повторите пароль<span class="required">*</span></label>
+                            <input type="password" class="form-block-text" name="second_password" id="second_password"
+                              autocomplete="off">
+                          </p>
+                          <p class="form-block-submit">
+                            <input type="hidden" id="register-nonce" name="register-nonce" value="ece5871410"><input
+                              type="hidden" name="_wp_http_referer">
+                            <button type="submit" class="btn btn-reset btn--action" name="registration"
+                              aria-label="save">save</button>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-</div>
+        </div>
       </div>
-      </div>
+    </nav>
   </div>
-</nav>
-</div>
-<div class="burger-wrap">
-  <button class="burger btn-reset">
-    <span class="burger__line"></span>
-  </button>
-
-</div>
-
-</div>
-
+  <div class="burger-wrap">
+    <button class="burger btn-reset">
+      <span class="burger__line"></span>
+    </button>
+  </div>
+  </div>
 </header>
 
     <main class="main">
-      <section class="hero">
+      <section class="hero page-hero">
   <h1 class="visually-hidden">ресторан «Burrito»</h1>
   <div class="swiper mainSlider">
     <div class="swiper-wrapper">
@@ -233,7 +239,7 @@
       <li class="hero__nav--right"><img src="img/right.svg" alt="arrow-right"></li>
     </ul>
     <div class="down-wrap">
-      <a href="#down" class="down">
+      <a href="#down" class="down" rel="bookmark">
         <svg class="animate__animated animate__fadeInUp animate__infinite animate__slower">
           <use xlink:href="img/sprite.svg#arrows-down"></use>
         </svg>
@@ -244,52 +250,204 @@
 
       <section class="reservation">
   <div class="container reservation__container">
-
+    <h2 class="visually-hidden">reservation-form</h2>
     <div class="reservation__content">
-      <form action="#" class="reservation-form wow animate__bounce" data-wow-offset="300">
-        <label class="reservation-form-field">
-          <select class="reservation-form-field__select reservation-form-field--data">
-            <option class="">July 11</option>
+      <form action="#" method="post" class="reservation-form wow animate__bounce" data-wow-offset="300">
+        <label for="data-reservation" class="reservation-form-field">
+          <select name="data-reservation" id="data-reservation" class="reservation-form-field__select reservation-form-field--data">
+            <option>July 11</option>
             <option>July 12</option>
             <option>July 13</option>
             <option>July 14</option>
           </select>
         </label>
-        <label class="reservation-form-field">
-          <select class="reservation-form-field__select reservation-form-field--hour">
-            <option class="">20.00</option>
+        <label for="hour-reservation" class="reservation-form-field">
+          <select name="hour-reservation" id="hour-reservation" class="reservation-form-field__select reservation-form-field--hour">
+            <option>20.00</option>
             <option>21.00</option>
             <option>22.00</option>
             <option>23.00</option>
           </select>
         </label>
-
-        <label class="reservation-form-field">
-          <select class="reservation-form-field__select reservation-form-field--people">
-            <option class="">2 people</option>
+        <label for="quant-people" class="reservation-form-field">
+          <select name="quant-people" id="quant-people" class="reservation-form-field__select reservation-form-field--people">
+            <option>2 people</option>
             <option>3 people</option>
             <option>4 people</option>
             <option>5 people</option>
           </select>
         </label>
-        <button class="reservation-form__btn btn btn--primary">order</button>
-
+        <button class="reservation-form__btn btn btn--primary" aria-label="order">order</button>
       </form>
-      <p class="reservation-explain">Due to the limited amount of tables in our restaurant, we cannot guarantee a private table.
-        Some reservations will be sat at the bar or c ommunal. If you prefer a table, please
+      <p class="reservation-explain">Due to the limited amount of tables in our restaurant, we cannot guarantee a
+        private table. Some reservations will be sat at the bar or c ommunal. If you prefer a table, please
         call or make a note and we will do our bes t to accommodate your request.</p>
-<div class="reservation-flower wow animate__pulse" data-wow-offset="200">
-  <div class="flower"></div>
-</div>
+      <div class="reservation-flower wow animate__pulse" data-wow-offset="200">
+        <div class="flower"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
+      <section class="calling" style="background-image: url(../img/calling.jpg);">
+  <div class="container">
+    <h2 class="calling__title wow animate__zoomInDown" data-wow-duration="1.5s" data-wow-offset="200">Feel Mexico</h2>
+  </div>
+</section>
+
+      <section class="info-first info">
+  <div class="container">
+    <h2 class="visually-hidden">description of the restaurant</h2>
+    <div class="info__content">
+      <div class="info__list">
+        <div class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__title">Burrito ChileBar</div>
+          <div class="info__text">
+            <p class="">Burrito — this is a chili bar in the heart
+              of Tijuana, decorated  in a kitschy style
+              with bright colors and a hot atmosphere.
+              It embodies an  original   culture
+              Mexico.  Visitorswillfeel as if
+              they are in  hell and; heaven
+              at  the; same  time</p>
+          </div>
+          <div class="info__decor wow animate__pulse" data-wow-offset="200">
+            <div class="flower"></div>
+          </div>
+        </div>
+        <div class="info__item wow animate__fadeInRight" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__img info__img--first"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="quote quote--first" style="background-image: url(../img/quote-first.jpg);">
+  <div class="container quote__container">
+    <h2 class="visually-hidden">quote of a visitor</h2>
+    <div class="quote__content wow animate__fadeInLeft" data-wow-offset="200">
+      <q class="quote__text">«Burrito ignites a hot flame in you, it collapses
+        on you like lava, with its most powerful music,
+        a sea of tequila and devilish food»</q>
+      <div class="quote__autor">Jonny Depp, the visitor</div>
+    </div>
+  </div>
+</section>
+
+      <section class="info-second info">
+  <div class="container">
+    <div class="info__content">
+      <div class="info__list">
+        <div class="info__item wow animate__fadeInLeft" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__subtitle">The most profitable deals with us</div>
+          <h2 class="info__title">Happy Hours</h2>
+          <div class="info__text">
+            <p class="">Burrito — this is a chidiv bar in the heart
+              of Tijuana, decorated  in a kitschy style
+              with bright colors and a hot atmosphere.
+              It embodies an  original   culture
+              Mexico.  Visitorswillfeel as if
+              they are in  hell and; heaven
+              at  the; same  time</p>
+          </div>
+        </div>
+        <div class="info__item wow animate__fadeInRight" data-wow-offset="300" data-wow-delay=".1s">
+          <div class="info__img info__img--second"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="info--third info">
+  <div class="container">
+    <div class="info__content">
+      <div class="info__list">
+        <div class="info__item info__item--block-1 wow animate__fadeInRight" data-wow-offset="200" data-wow-delay=".1s">
+          <div class="info__subtitle">The most profitable deals with us</div>
+          <h2 class="info__title">Music Time</h2>
+          <div class="info__decor wow animate__pulse" data-wow-offset="200">
+            <div class="flower"></div>
+          </div>
+          <div class="info__text">
+            <p class="">Burrito — this is a chidiv bar in the heart
+              of Tijuana, decorated  in a kitschy style
+              with bright colors and a hot atmosphere.
+              It embodies an  original   culture
+              Mexico.  Visitorswillfeel as if
+              they are in  hell and; heaven
+              at  the; same  time</p>
+          </div>
+        </div>
+        <div class="info__item info__item--block-2 wow animate__fadeInLeft" data-wow-offset="200" data-wow-delay=".1s">
+          <div class="info__img info__img--third"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="quote quote--second" style="background-image: url(../img/quote-second.jpg);">
+  <div class="container quote__container">
+    <h2 class="visually-hidden">quote of a visitor</h2>
+    <div class="quote__content quote__content--second wow animate__fadeInLeft" data-wow-offset="200">
+      <q class="quote__text">«Burrito ignites a hot flame in you, it collapses
+        on you like lava, with its most powerful music,
+        a sea of tequila and devilish food»</q>
+      <div class="quote__autor">Penelope Cruz, the visitor</div>
+    </div>
+  </div>
+</section>
+
+      <section class="address-block">
+  <div class="container">
+    <div class="address-block__content">
+      <h2 class="title address-block__title">Our address</h2>
+      <address class="address-block__address">Moscow A.Berzarina str. building 6</address>
+      <a href="#" rel="contact" class="address-block__phone">(510) 647-9525</a>
+      <a href="#" rel="contact" class="address-block__mail">info@lamarchaberkeley.com</a>
+      <a href="#" class="address-block__btn btn btn--gray btn-reset wow animate__pulse"
+        data-wow-offset="200" rel="bookmark">reserve</a>
     </div>
   </div>
 </section>
 
       </main>
-    <footer class="footer">
-  <div class="container"></div>
+    <footer class="footer page-footer">
+  <a href="#page" data-scroll class="to-top" rel="bookmark">
+    <span class="to-top__icon">
+      <svg>
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </span>
+  </a>
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__social social" id="down">
+        <a class="social__icon" href="#" rel="noopener">
+          <svg>
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a class="social__icon" href="#" rel="noopener">
+          <svg>
+            <use xlink:href="img/sprite.svg#odno"></use>
+          </svg>
+        </a>
+        <a class="social__icon" href="#" rel="noopener">
+          <svg>
+            <use xlink:href="img/sprite.svg#twit"></use>
+          </svg>
+        </a>
+      </div>
+      <h2 class="footer__title">2018 Burrito Chili-Bar</h2>
+      <h3 class="footer__subtitle">Website built at The Building Block</h3>
+      <span class="footer__copyright">Terms&PrivacyPolicyReserveNow</span>
+    </div>
+  </div>
 </footer>
+<div class="overlay"></div>
 
   </div>
 </body>

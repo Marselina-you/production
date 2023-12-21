@@ -29,20 +29,20 @@
   transition: color 0.3s ease-in-out;
 
   &--primary {
-    border-color: var(--primary-color);
-    background-color: var(--primary-color);
+    border-color: var(--green-color);
+    background-color: var(--green-color);
     transition: all 0.3s ease-in-out;
     @include for-hover {
       &:hover {
-        border-color: var(--primary-color-hover);
-        background-color: var(--primary-color-hover);
+        border-color: var(--green-color-hover);
+        background-color: var(--green-color-hover);
       }
     }
     &:active {
-      background-color: var(--primary-color-hover);
+      background-color: var(--green-color-hover);
     }
     &:focus {
-      background-color: var(--primary-color-hover);
+      background-color: var(--green-color-hover);
     }
   }
 
@@ -71,6 +71,23 @@
   }
   @include small-tablet {
     font-size: 1.125rem;
+  }
+  &--gray {
+    background-color: var(--text-light-color);
+    transition: background-color 0.3s ease-in-out;
+
+@include for-hover {
+  &:hover {
+    background-color: var(--green-color);
+  }
+}
+
+    &:active {
+      background-color: var(--green-color);
+    }
+    &:focus {
+      background-color: var(--green-color);
+    }
   }
 
 }
